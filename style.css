@@ -5,3 +5,14 @@ body {
     font-family: 'Open Sans';
     background-color: rgb(85, 139, 139);
 }
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1 {
+    margin: 0 1rem;
+}
+header > a {
+    margin: 0 1rem;
+}
