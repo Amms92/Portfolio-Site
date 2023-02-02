@@ -3,7 +3,9 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans';
-    background-color: rgb(85, 139, 139);
+    background-color: rgb(34, 36, 36);
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
 }
 header {
     display: flex;
@@ -15,15 +17,53 @@ h1 {
     font-size: 2.5rem;
 }
 header > nav {
-    margin: 0 1rem;
+    margin: 1rem 1rem;
 }
 nav > a {
-    color: black;
+    color: rgb(255, 255, 255);
     margin: 0 0.5rem;
     font-size: 2rem;
     text-decoration: none;
 }
 nav > a:hover {
     text-decoration: underline;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+}
+#landing {
+    padding: 30rem 0;
+    background-image: 
+    url("https://images.unsplash.com/photo-1565932887479-b18108f07ffd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+}
+h2 {
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: bolder;
+}
+h3 {
+    font-size: 2rem;
+}
+#projects {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+#card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 15rem;
+    gap: 1rem;
+    justify-content: center;
+    width: 80%;
+    height: 600px;
+    align-items: center;
+}
+
+.project-card {
+    border: 1px solid rgb(59, 94, 94);
+    background-color: rgb(104, 173, 173);
+    height: 100%;
+}
+#contact {
+    background-color: white;
+    color: rgb(34, 36, 36);
 }
